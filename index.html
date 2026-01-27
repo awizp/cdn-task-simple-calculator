@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/cdn-favicon-512.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="/src/style.css">
+
+  <title>Calculator Application | Task 17</title>
+</head>
+
+<body>
+  <main class="space-y-5">
+
+    <h1 class="text-3xl font-bold italic text-center">Simple Calculator</h1>
+
+    <section class="calculator">
+
+      <div class="preview">...</div>
+      <div class="result">0</div>
+
+      <!-- all buttons in basic calculation -->
+      <div class="basic">
+        <button data-function="PI" class="special-btn hidden">&pi;</button>
+        <button id="ac" class="accent text-xl">AC</button>
+        <button id="delete" class="accent text-xl">C</button>
+        <button data-value="%" class="accent font-bold text-xl">%</button>
+        <button data-operator="/" class="accent font-bold text-xl">/</button>
+
+        <button data-function="log" class="special-btn hidden">log(x)</button>
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-operator="*" class="accent font-bold text-2xl">x</button>
+
+        <button data-function="ln" class="special-btn hidden">ln(x)</button>
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-operator="-" class="accent font-bold text-2xl">-</button>
+
+        <button data-function="sqX" class="special-btn hidden">&radic;x</button>
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-operator="+" class="accent font-bold text-2xl">+</button>
+
+        <button data-function="powX" class="special-btn hidden">x<sup>y</sup></button>
+        <button class="accent text-xl select-none" id="toggle-btn">
+          <ion-icon name="caret-down-outline" class="pointer-events-none"></ion-icon></button>
+        <button data-value="0">0</button>
+        <button data-value=".">.</button>
+        <button id="equals" class="equals">=</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ionic icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- main javascript -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

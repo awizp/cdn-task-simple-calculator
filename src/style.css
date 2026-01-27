@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply w-full h-screen bg-black text-white flex justify-center items-center;
+  }
+
+  button {
+    @apply h-14 rounded-xl bg-zinc-900 p-3 cursor-pointer flex justify-center items-center hover:bg-zinc-800 transition-colors duration-300 font-semibold;
+  }
+
+  button:active {
+    @apply bg-gray-900;
+  }
+}
+
+@layer components {
+  .calculator {
+    @apply w-90 bg-zinc-950 rounded-xl p-3 border-2 border-white/20;
+  }
+
+  .preview {
+    @apply p-5 text-right text-gray-400 text-sm font-semibold;
+  }
+
+  .result {
+    @apply text-4xl text-right p-5;
+  }
+
+  .basic {
+    @apply grid grid-cols-4 gap-2.5 mt-2;
+  }
+
+  .accent {
+    @apply text-orange-600;
+  }
+
+  .equals {
+    @apply bg-orange-700 text-2xl;
+  }
+}
