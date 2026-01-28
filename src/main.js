@@ -22,12 +22,15 @@ document.addEventListener("click", e => {
     if (value) {
         append(value);
     };
+
     if (operator) {
         chooseOperator(operator);
     };
+
     if (specialFunc) {
         chooseSpecialOp(specialFunc);
     };
+
     if (btn.id === "equals") {
         if (specialOperator) {
             calculateSpecial();
@@ -35,12 +38,15 @@ document.addEventListener("click", e => {
             calculate();
         }
     };
+
     if (btn.id === "ac") {
         clearAll();
     };
+
     if (btn.id === "delete") {
         backspace();
     };
+
     if (btn.id === "toggle-btn") {
         toggleSpecial();
     }
@@ -125,12 +131,15 @@ const calculate = () => {
         case "+":
             result = a + b;
             break;
+
         case "-":
             result = a - b;
             break;
+
         case "*":
             result = a * b;
             break;
+
         case "/":
             result = b === 0 ? "Error" : a / b;
             break;
